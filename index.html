@@ -1,61 +1,166 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Editorial Vinilo</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<style>
-  	body {
-  	  font-family: 'Poppins', sans-serif;
-  	  background-color: #f5f5f5;
-  	  color: #333;
-  	  width: 80%;
-			margin: auto;
-			padding: 20px;
-			text-align: justify;	
-  	}
-  	.hero {
-  	  width: 80%;
-			margin: auto;
-			padding: 20px;
-			text-align: center;	
-  	}
-  	h1 {
-			text-align: center;
-  	}
-		.btn {
-		  padding: 10px 20px;
-			background-color: gainsboro;
-			color: black;	
-			border: none;	
-			border-radius: 3px;
-			text-decoration: none;
-			display: inline-block;	
-			margin: 10px;
-			align-content: center;
-		}	
-		.section {
-		  margin-bottom: 50px;
-		}
-	</style>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Vinilo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    ::selection{
+      color: white;
+      background-color: lightpink;
+    }
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    header {
+        padding: 2rem;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    nav ul li {
+        margin: 0 .5rem;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+        font-size: .8rem;
+    }
+    .highlight {
+        font-weight: bold;
+    }
+    .main {
+        text-align: center;
+        padding: 2rem;
+    }
+    h1 {
+        font-family: 'Playfair Display', serif;
+    }
+    h2{
+        font-family: 'Playfair Display', serif;
+    }
+    h3{
+        font-family: 'Playfair Display', serif;
+    }
+    .main p{
+        font-size: .7rem;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+    ul li{
+        font-size: .7rem;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+    .uno{
+      animation: first 3s infinite;
+    }
+    .dos{
+      animation: second 3s infinite;
+    }
+    .tres{
+      animation: third 3s infinite;
+    }
+    @keyframes first {
+      0%{
+        opacity: 1;
+      }
+      25%{
+        opacity: 0;
+      }
+        50%{
+          opacity: 1;
+      }
+      75%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+      
+    @keyframes second{
+      5%{
+          opacity: 1;
+      }
+      30%{
+          opacity: 0;
+      }
+      55%{
+        opacity: 1;
+      }
+      80%{
+        opacity: 0;
+      }
+      105%{
+        opacity: 1;
+      }
+    }
+      
+    @keyframes third{
+      10%{
+        opacity: 1;
+      }
+      35%{
+        opacity: 0;
+      }
+      60%{
+        opacity: 1;
+      }
+      85%{
+        opacity: 0;
+      }
+      110%{
+        opacity: 1;
+      }
+    }
+    
+    @media screen and (min-width: 500px) {
+      .main{
+        padding: 2rem 10rem;
+      }
+    }
+  </style>
 </head>
 <body>
-	<section class="hero">
-	  <h1>Editorial Vinilo</h1>
-		<p>Donde la literatura toca notas perfectas</p>
-		<a class="btn" href="mailto:editorialvinilo.contacto@gmail.com?subject=Publicación">Publica con Nosotros</a>
-		<a href="shop.html" class="btn">Conoce nuestros autores</a>
-	</section>
-	
-	<section class="section">
-	  <h2>¿Quiénes somos?</h2>
-	  <p>Editorial Vinilo es una editorial digital cubana que apoya y promueve la literatura cubana a nivel nacional e internacional. Nuestro objetivo es ofrecer a los autores cubanos una plataforma para compartir sus historias y talento literario con una audiencia global. <br>
-      Nuestro principal objetivo es convertirnos en una de las editoriales digitales más influyentes en Cuba y en la comunidad de escritores hispanos. Queremos lograr esto brindando un servicio de excelencia, promoviendo la diversidad literaria y fomentando la colaboración entre autores.</p>
-	</section>
-	
-	<section class="section">		
-		  <h2>Servicios</h2>	
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#concursos">Concursos</a></li>
+                <li class="highlight"><a href="mailto:editorialvinilo.contacto@gmail.com">Hablemos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main" id="inicio">
+        <h1>Editorial VINILO</h1>
+        <p>Somos una editorial digital cubana que apoya y promueve la literatura cubana a nivel nacional e internacional. Nuestro objetivo es ofrecer a los autores cubanos una plataforma para compartir sus historias y talento literario con una audiencia global. <br>
+          Nuestro principal objetivo es convertirnos en una de las editoriales digitales más influyentes en Cuba y en la comunidad de escritores hispanos. Queremos lograr esto brindando un servicio de excelencia, promoviendo la diversidad literaria y fomentando la colaboración entre autores.</p>
+    </div>
+    <div class="main">
+      <h2>Visita nuestro marketplace</h2>
+      <p>Descubre nuevos talentos literarios cubanos en nuestro marketplace de libros digitales. Explora una amplia variedad de obras escritas por autores locales que han superado las dificultades de publicar en nuestro país. Apoya a los autores cubanos y disfruta de historias cautivadoras y auténticas. ¡No lo pienses más y visita nuestro marketplace hoy mismo!</p>
+      <a href="">Marketplace 
+      <span class="uno">></span>
+      <span class="dos">></span>
+      <span class="tres">></span>
+      </a>
+    </div>
+    <div class="main" id="servicios">
+      <h2>Servicios</h2>	
 		  <ul>	
         <li>Edición y corrección ortotipográfica.</li>
         <li>Maquetación de e-book.</li>
@@ -66,18 +171,37 @@
         <li>Talleres.</li>
         <li>Registro de propiedad intelectual con Save Creative.</li>
 	  	</ul>
-	</section>	
-	
-	<section class="section">
-		  <h2>Talleres</h2>		
+    </div>
+    <div class="main" id="talleres">
+      <h2>Talleres</h2>		
 		  <p>Estamos trabajando en la programación de nuestros próximos talleres para mejorar las habilidades de escritura y publicación. Manténganse atentos a nuestras actualizaciones, ya que pronto publicaremos las fechas de los talleres en nuestra página web y redes sociales. ¡No se pierdan esta oportunidad de crecimiento y aprendizaje!
 		  </p>	
-	</section>
-	
-	<section class="section">	
-		<h2>Contáctanos</h2>	
-		<p>Envíanos un correo electrónico a <a href="mailto:editorialvinilo.contacto@gmail.com">editorialvinilo.contacto@gmail.com</a></p>
-	</section>
-
+    </div>
+    <div class="main" id="concursos">
+      <h2>Convocatorias</h2>
+      <h3>Concursos de Relatos Cortos.</h3>
+      <p>Bases del concurso:</p>
+      <p><strong>Temática: </strong>Libre (se aceptan obras de cualquier género y sobre temas diversos).<br>
+      <strong>Extensión: </strong>Máximo de 2.000 palabras. <br>
+      <strong>Fecha de entrega: </strong>Las obras deben enviarse antes del 30 de septiembre. <br>
+      <strong>Anuncio de ganadores: </strong>Los ganadores serán anunciados el 5 de octubre. <br>
+      <strong>Premios: </strong>El ganador recibirá un pack de servicios gratis de nuestra editorial, incluyendo corrección ortotipográfica, diseño de portada y publicación en nuestro marketplace.<br>
+      <strong>Participación: </strong>El concurso está abierto a escritores de nacionalidad cubana y cualquier edad. <br>
+      <strong>Derechos de autor: </strong>Los autores conservan los derechos de autor de sus obras, pero al participar en el concurso, autorizan a nuestra editorial a publicar sus relatos en nuestro marketplace y en las redes sociales para promoción del concurso y del autor. <br>
+      <strong>Modalidad de envío: </strong>Los relatos deben enviarse en formato PDF a través de nuestra dirección de correo electrónico (editorialvinilo.contacto@gmail.com), incluyendo los siguientes datos:
+      <ul>
+        <li>Título del relato</li>
+        <li>Nombre y apellidos del autor</li>
+        <li>Dirección de correo electrónico</li>
+        <li>Título de la obra</li>
+        <li>Número de palabras</li>
+        <li>Confirmación de que la obra es original y no ha sido publicada previamente</li>
+      </ul>
+</p>
+    </div>
+    <div class="main">
+      <h2>Contáctanos</h2>	
+		  <p>Envíanos un correo electrónico a <a href="mailto:editorialvinilo.contacto@gmail.com">editorialvinilo.contacto@gmail.com</a></p>
+    </div>
 </body>
-</html>
+	</html>
